@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(251, 251, 251);
+}
+.nav{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 100px;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px,20px;
+    
+
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+li,a{
+    text-decoration: none;
+
+}
+.nav-list li{
+    margin: 0 70px;
+
+}
+.nav-list a{
+    color: #fff;
+    font-size: 20px;
+}
+.welcome-section{
+    
+    
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+
+}
+.welcome-section .self{
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+    text-align: left;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0,0, 0.1);
+}
+
+
+.projects-section-header{
+    font-size: 32px;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+
+.projects-section .project-image{
+ min-width: 350px;
+
+}
+
+.project-image{
+    width: 80%;
+    height: auto;
+    border: solid 1px gray;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+@media(max-width:250px){
+    .project-image{
+        width: 300px;
+    }
+
+}
+.contact-section{
+    height: 180px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    
+}
+.contact-section-header{
+    display: flex;
+    margin-right: 10%;
+    font-size: 30px;
+
+}
+
+.contact-details{
+    
+    color: #faf7f7;
+    padding: 5px;
+    align-items: center;
+    
+   
+    
+   
+}
+
+@media(max-width:786px){
+    .contact-links{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .welcome-section h1{
+        font-size: 20px;
+    }
+    .welcome-section .self{
+        font-size: 14px;
+    }
+}
+.footer{
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+@media(max-width:786px){
+    footer{
+        text-align:center;
+        padding: 5px;
+    }
+}
